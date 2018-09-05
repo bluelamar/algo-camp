@@ -11,8 +11,15 @@ This contains a survey of algorithms to facilitate quick review.
 ### Looping algorithm
 
 ### Applications: 
-* Shortest path : Dijkstra, Bellman-Ford
+* Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
 * Minimal spanning tree : Prim
+
+#### Unweighted graph
+
+##### Data structures:
+* Queue
+* Distance : vector or map
+* Previous vertex : vector or map
 
 #### Dijkstra
 
@@ -26,6 +33,8 @@ This contains a survey of algorithms to facilitate quick review.
 
 ##### Data structures:
 * Priority Queue
+* Distance : vector or map
+* Previous vertex : vector or map
 
 
 ## DFS - Depth First Search
