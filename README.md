@@ -26,6 +26,7 @@ In **graph loop:** Iterate over each node/vertex in the Graph
 * Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
 * Minimal spanning tree : Prim
 
+---
 ### Unweighted graph - Shortest Path
 
 #### Data structures:
@@ -47,7 +48,7 @@ Given vertex/node to find Shortest Path for
       * add **adj-node** to **Queue**
       * set **Previous map**: {key=**adj-node**, **node**}
     
-
+---
 ### Dijkstra - Shortest Path in Weighted graph
 
 #### Data structures:
@@ -57,8 +58,7 @@ Given vertex/node to find Shortest Path for
 
 #### Looping algorithm
 
-
-
+---
 ### Prim
 
 #### Data structures:
