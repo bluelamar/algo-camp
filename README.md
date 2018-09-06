@@ -16,6 +16,7 @@ In graph loop: iterate over each node/vertex in the Graph
 * add node to new Queue
 * In Queue loop:
   * pull out node from Queue
+  * Process: print, etc
   * add node to Visited Set
   * In adjacent node loop:
     * check each of its adjacent nodes against Set of of Visited nodes
@@ -25,24 +26,43 @@ In graph loop: iterate over each node/vertex in the Graph
 * Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
 * Minimal spanning tree : Prim
 
-#### Unweighted graph
+### Unweighted graph - Shortest Path
 
-##### Data structures:
+#### Data structures:
 * Queue
-* Distance : vector or map
+* Distance : vector or map - this is similar to the Visited Set for BFS
 * Previous vertex : vector or map
 
-#### Dijkstra
+#### Looping algorithm
 
-##### Data structures:
+Given vertex/node to find Shortest Path for
+* add node to Distance map: {key=node, value=0}
+* add node to Queue
+* In Queue loop:
+  * pull out node from Queue
+  * Process: print, etc
+  * In adjacent node loop:
+    * check each of its adjacent nodes against Distance map
+    * if node not in Distance map
+     * add to Distance map: {key=adj-node, value=(1 + Distance.get(node)}
+     * add to Queue
+     * set Previous map: {key=adj-node, node}
+    
+
+### Dijkstra
+
+#### Data structures:
 * Priority Queue
 * Distance : vector or map
 * Previous vertex : vector or map
 
+#### Looping algorithm
 
-#### Prim
 
-##### Data structures:
+
+### Prim
+
+#### Data structures:
 * Priority Queue
 * Distance : vector or map
 * Previous vertex : vector or map
