@@ -43,10 +43,10 @@ Given vertex/node to find Shortest Path for
   * Process: print, etc
   * In adjacent node loop:
     * check each of its adjacent nodes against Distance map
-    * if node not in Distance map
-     * add to Distance map: {key=adj-node, value=(1 + Distance.get(node)}
-     * add to Queue
-     * set Previous map: {key=adj-node, node}
+    * if adj-node not in Distance map
+      * add adj-node to Distance map: {key=adj-node, value=(1 + Distance.get(node)}
+      * add adj-node to Queue
+      * set Previous map: {key=adj-node, node}
     
 
 ### Dijkstra
