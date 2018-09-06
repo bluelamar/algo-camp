@@ -42,7 +42,6 @@ Given vertex/node to find Shortest Path for
   * pull out **node** from **Queue**
   * Process: print, etc
   * In **adjacent node loop**:
-    * check each of its **adjacent nodes** against **Distance map**
     * if **adj-node** not in **Distance map**
       * add **adj-node** to **Distance map**: {key=**adj-node**, value=**(1 + Distance.get(node)**}
       * add **adj-node** to **Queue**
