@@ -36,17 +36,17 @@ In **graph loop:** Iterate over each node/vertex in the Graph
 #### Looping algorithm
 
 Given vertex/node to find Shortest Path for
-* add node to Distance map: {key=node, value=0}
-* add node to Queue
-* In Queue loop:
-  * pull out node from Queue
+* add **node** to **Distance map**: {key=**node**, value=**0**}
+* add **node** to **Queue**
+* In **Queue loop**:
+  * pull out **node** from **Queue**
   * Process: print, etc
-  * In adjacent node loop:
-    * check each of its adjacent nodes against Distance map
-    * if adj-node not in Distance map
-      * add adj-node to Distance map: {key=adj-node, value=(1 + Distance.get(node)}
-      * add adj-node to Queue
-      * set Previous map: {key=adj-node, node}
+  * In **adjacent node loop**:
+    * check each of its **adjacent nodes** against **Distance map**
+    * if **adj-node** not in **Distance map**
+      * add **adj-node** to **Distance map**: {key=**adj-node**, value=**(1 + Distance.get(node)**}
+      * add **adj-node** to **Queue**
+      * set **Previous map**: {key=**adj-node**, **node**}
     
 
 ### Dijkstra - Shortest Path in Weighted graph
