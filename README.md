@@ -59,7 +59,9 @@ Given vertex/node to find Shortest Path for
 #### Looping algorithm
 
 ---
-### Prim
+### Prim - Minimal Spanning Tree
+
+The Minimal Spanning Tree is a sub-graph of a Graph that contains all the vertices in the Graph.
 
 #### Data structures:
 * Priority Queue
@@ -77,6 +79,9 @@ Stack
 ### Applications:
 * Path discovery
 
+---
+
+## Bipartite Graph
 
 
 
