@@ -66,7 +66,7 @@ Given vertex/node to find Shortest Path for
 * Distance : vector or map
 * Previous vertex : vector or map
 
-
+---
 ## DFS - Depth First Search
 
 ### Data structures:
