@@ -15,11 +15,11 @@ In graph loop: iterate over each node/vertex in the Graph
 * if current node not in Visited Set - perform BFS with it
 * add node to new Queue
 * In Queue loop:
-** pull out node from Queue
-** add node to Visited Set
-** In adjacent node loop:
-*** check each of its adjacent nodes against Set of of Visited nodes
-*** if node not in Visited Set, add to end of Queue
+  * pull out node from Queue
+  * add node to Visited Set
+  * In adjacent node loop:
+    * check each of its adjacent nodes against Set of of Visited nodes
+    * if node not in Visited Set, add to end of Queue
 
 ### Applications: 
 * Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
