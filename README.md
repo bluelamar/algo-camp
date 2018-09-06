@@ -11,17 +11,17 @@ This contains a survey of algorithms to facilitate quick review.
 
 ### Looping algorithm
 
-In graph loop: iterate over each node/vertex in the Graph
-* if current node not in Visited Set - perform BFS with it
-* add node to new Queue
-* In Queue loop:
-  * pull out node from Queue
+In **graph loop:** Iterate over each node/vertex in the Graph
+* if current **node** not in **Visited Set** - perform BFS with it
+* add **node** to new **Queue**
+* In **Queue loop**:
+  * pull out **node** from **Queue**
   * Process: print, etc
-  * add node to Visited Set
-  * In adjacent node loop:
-    * check each of its adjacent nodes against Set of of Visited nodes
-    * if node not in Visited Set, add to end of Queue
-
+  * add **node** to **Visited Set**
+  * In **adjacent node loop**:
+    * check each of its adjacent nodes against **Set of of Visited** nodes
+    * if **adj-node** not in **Visited Set**, add to end of **Queue**
+    
 ### Applications: 
 * Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
 * Minimal spanning tree : Prim
