@@ -19,7 +19,7 @@ In **graph loop:** Iterate over each node/vertex in the Graph
   * Process: print, etc
   * add **node** to **Visited Set**
   * In **adjacent node loop**:
-    * check each of its adjacent nodes against **Set of of Visited** nodes
+    * check each of its adjacent nodes against **Set of Visited** nodes
     * if **adj-node** not in **Visited Set**, add to end of **Queue**
     
 ### Applications: 
