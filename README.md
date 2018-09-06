@@ -49,7 +49,7 @@ Given vertex/node to find Shortest Path for
       * set Previous map: {key=adj-node, node}
     
 
-### Dijkstra
+### Dijkstra - Shortest Path in Weighted graph
 
 #### Data structures:
 * Priority Queue
