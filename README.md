@@ -82,10 +82,30 @@ Given node/vertex to find shortest path from.
 
 The Minimal Spanning Tree is a sub-graph of a Graph that contains all the vertices in the Graph.
 
+This algorithm very similar to Dijkstra.
+
 #### Data structures:
 * Priority Queue
 * Distance : vector or map
 * Previous vertex : vector or map
+
+#### Looping algorithm
+
+Given a map of **edge weights**.
+
+Loop through all nodes/vertices in the Graph
+  * if node not in Distance map, add it with weight=0
+  * add it to PriorityQueue with weight = 0
+  * Loop through the adjacency nodes 
+    * calculate distance = Distance.get(node) + weight(node, adj-node)
+    * if not Distance.get(adj-node)
+      * put adj-node into PriorityQueue: PriorityQueue.put(adj-node, distance)
+      * update: Distance.put(adj-node, weight(node, adj-node))
+      * update: Previous.put(adj-node, node)
+    * else if Distance.get(adj-node) > distance
+      * update PriorityQueue with adj-node and distance
+      * update: Distance.put(adj-node) = weight(node, adj-node)
+      * update: Previous.put(adj-node, node)
 
 ---
 ## DFS - Depth First Search
