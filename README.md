@@ -11,6 +11,8 @@ This contains a survey of algorithms to facilitate quick review.
 
 ### Looping algorithm
 
+Build **adjacency ** or **queue** for each node.
+
 In **graph loop:** Iterate over each node/vertex in the Graph
 * if current **node** not in **Visited Set** - perform BFS with it
 * add **node** to new **Queue**
