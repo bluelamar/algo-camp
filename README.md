@@ -60,6 +60,23 @@ Given vertex/node to find Shortest Path for
 
 #### Looping algorithm
 
+Given a map of edge weights.
+Given node/vertex to find shortest path from.
+* add the node to the PriorityQueue with value 0
+* Distance map is set to 0 for the node
+* In PriorityQueue loop
+  * remove min node from the PriorityQueue
+  * In adjacency loop
+    * calculate distance = Distance.get(node) + weight(node, adj=node)
+    * if not Distance.get(adj-node)
+      * put adj-node into the PriorityQueue with weight=distance
+      * update distance: Distance.set(adj-node, distance)
+      * update Previous map: Previous.set(adj-node, node) : { key=adj-node, value=node }
+    * else if Distance.get(adj-node) > distance
+      * lighter weight path so update PriorityQueue for adj-node with weight=distance
+      * update Distance.set(adj-node, distance)
+      * reset PreviousMap.set(adj-node, node)
+
 ---
 ### Prim - Minimal Spanning Tree
 
