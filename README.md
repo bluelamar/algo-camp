@@ -67,7 +67,7 @@ Given node/vertex to find shortest path from.
 * In **PriorityQueue loop**
   * remove **min node** from the **PriorityQueue**
   * In **adjacency loop**
-    * calculate **distance** = **Distance.get(node)** + weight(node, adj-node)
+    * calculate **distance** = **Distance.get(node)** + **weight(node, adj-node)**
     * if not **Distance.get(adj-node)**
       * put **adj-node** into the **PriorityQueue** with **weight=distance**
       * update: **Distance.set(adj-node, distance)**
