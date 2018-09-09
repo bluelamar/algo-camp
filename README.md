@@ -108,6 +108,11 @@ Loop through all nodes/vertices in the Graph
       * update: **Previous.put(adj-node, node)**
 
 ---
+### Kruskal - Minimal Spanning Tree
+
+TODO
+
+---
 ## DFS - Depth First Search
 
 ### Data structures:
@@ -119,7 +124,6 @@ Stack
 * Path discovery
 
 ---
-
 ## Bipartite Graph
 
 
