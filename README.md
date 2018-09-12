@@ -8,6 +8,7 @@ This contains a survey of algorithms to facilitate quick review.
 ### Data structures:
 * Queue : create queue per path/tree
 * Set : visited set
+* List or Set : adjacencies or edges per node
 
 ### Looping algorithm
 
@@ -116,17 +117,22 @@ TODO
 ## DFS - Depth First Search
 
 O(V + E)
+
 V = number of vertices
+
 E = number of edges
 
 ### Data structures:
-Set : visited set
-Stack : used in Looping algo
+* Set : visited set
+* List or Set : adjacencies or edges per node
+* Stack : used in Looping algo
 
 ### Recursive algorithm
 
 Given a start node in Graph.
+
 Given an edge list per node.
+
 Given an empty **VisitedSet** .
 
 Process start **node**
@@ -139,6 +145,7 @@ Process start **node**
 ### Looping algorithm
 
 Given an edge list per node.
+
 Given a stack.
 
 Put the start **node** into the **Stack**
