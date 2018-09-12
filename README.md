@@ -6,8 +6,8 @@ This contains a survey of algorithms to facilitate quick review.
 ## BFS - Breadth First Search
 
 ### Data structures:
-* Queue
-* Set
+* Queue : create queue per path/tree
+* Set : visited set
 
 ### Looping algorithm
 
@@ -115,10 +115,41 @@ TODO
 ---
 ## DFS - Depth First Search
 
+O(V + E)
+V = number of vertices
+E = number of edges
+
 ### Data structures:
-Stack
+Set : visited set
+Stack : used in Looping algo
 
 ### Recursive algorithm
+
+Given a start node in Graph.
+Given an edge list per node.
+Given an empty **VisitedSet** .
+
+Process start **node**
+
+* put **node** in **Visited Set**
+* Loop through the **adjacency list** for this **node**
+  * if **node** not in **Visited Set**
+    * recursive call to Process **adj-node**
+
+### Looping algorithm
+
+Given an edge list per node.
+Given a stack.
+
+Put the start **node** into the **Stack**
+
+While **Stack** not empty
+* pop **node** from **Stack**
+* if **node** not in **Visited Set**
+  * put **node** into **Visited Set**
+  * Loop through the **adjacency list**
+    * put the **adj-node** into **Stack**
+
 
 ### Applications:
 * Path discovery
