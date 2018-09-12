@@ -122,6 +122,7 @@ Stack
 
 ### Applications:
 * Path discovery
+* Topological sort for DAG - Directed Acyclic Graph
 
 ---
 ## Bipartite Graph
