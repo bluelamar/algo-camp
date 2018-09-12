@@ -14,14 +14,14 @@ This contains a survey of algorithms to facilitate quick review.
 Build **adjacency set** or **queue** for each node.
 
 In **graph loop:** Iterate over each node/vertex in the Graph
-* if current **node** not in **Visited Set** - perform BFS with it
+* if current **node** not in **Visited Set** - continue to perform BFS with it
 * add **node** to new **Queue**
 * In **Queue loop**:
   * pull out **node** from **Queue**
   * Process: print, etc
   * add **node** to **Visited Set**
   * In **adjacent node loop**:
-    * check each of its adjacent nodes against **Set of Visited** nodes
+    * check adjacent node against **Set of Visited** nodes
     * if **adj-node** not in **Visited Set**, add to end of **Queue**
     
 ### Applications: 
