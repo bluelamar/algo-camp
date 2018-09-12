@@ -139,7 +139,7 @@ Process start **node**
 
 * put **node** in **Visited Set**
 * Loop through the **adjacency list** for this **node**
-  * if **node** not in **Visited Set**
+  * if **adj-node** not in **Visited Set**
     * recursive call to Process **adj-node**
 
 ### Looping algorithm
