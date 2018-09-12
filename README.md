@@ -5,6 +5,12 @@ This contains a survey of algorithms to facilitate quick review.
 
 ## BFS - Breadth First Search
 
+O(V + E)
+
+V = number of vertices
+
+E = number of edges
+
 ### Data structures:
 * Queue : create queue per path/tree
 * Set : visited set
@@ -118,10 +124,6 @@ TODO
 
 O(V + E)
 
-V = number of vertices
-
-E = number of edges
-
 ### Data structures:
 * Set : visited set
 * List or Set : adjacencies or edges per node
@@ -161,6 +163,32 @@ While **Stack** not empty
 ### Applications:
 * Path discovery
 * Topological sort for DAG - Directed Acyclic Graph
+
+### Topological sort - DAG
+
+#### Data structures:
+* Stack : sorted nodes - top of stack is lowest ordered
+* Queue : nodes to be processed
+* Set : visited set
+
+#### Recursive algorithm
+
+Given a DAG, build adjacency list for each node.
+
+Nodes that have no incoming edges are added to a **Queue**
+
+Sorted nodes will be kept in a **Stack**
+
+Loop thru **Queue**
+* remove **node** from **Queue**
+* Process **node**
+ * if **node** not in **Visited Set**
+  * add **node** to **Visited Set**
+  * Loop through **adjacency list**
+    * recursive call to Process **adj-node**
+  * push **node** onto **Sort Stack**
+      
+ When Process *node* returns, have a **Stack** with the sorted nodes
 
 ---
 ## Bipartite Graph
