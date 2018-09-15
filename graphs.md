@@ -30,6 +30,7 @@ In **graph loop:** Iterate over each node/vertex in the Graph
 ### Applications: 
 * Shortest path : Unweighted graph, Dijkstra, Bellman-Ford
 * Minimal spanning tree : Prim
+* Topological sort for DAG - Directed Acyclic Graph
 
 ---
 ### Unweighted graph - Shortest Path
