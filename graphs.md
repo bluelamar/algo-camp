@@ -58,9 +58,12 @@ Given vertex/node to find Shortest Path for
 ### Dijkstra - Shortest Path in Weighted graph
 
 #### Data structures:
-* Priority Queue
+* Priority Queue : to contain nodes weighted by their total distance from the start node
 * Distance : vector or map
 * Previous vertex : vector or map
+* Solution can be derived from Previous or distance containers
+  * Iterate Distances, put node into Priority Queue by its distance
+  * Iterate Previous, build linked list by inserting node after its parent
 
 #### Looping algorithm
 
@@ -89,7 +92,7 @@ The Minimal Spanning Tree is a sub-graph of a Graph that contains all the vertic
 This algorithm very similar to Dijkstra.
 
 #### Data structures:
-* Priority Queue
+* Priority Queue : to contain nodes weighted by their total distance from the start node
 * Distance : vector or map
 * Previous vertex : vector or map
 
@@ -154,7 +157,7 @@ While **Stack** not empty
 * if **node** not in **Visited Set**
   * put **node** into **Visited Set**
   * Loop through the **adjacency list**
-    * put the **adj-node** into **Stack**
+    * put the **adj-node** onto **Stack**
 
 
 ### Applications:
@@ -164,7 +167,7 @@ While **Stack** not empty
 ### Topological sort - DAG
 
 #### Data structures:
-* Stack : sorted nodes - top of stack is lowest ordered
+* Stack : solution of sorted nodes - top of stack is lowest ordered
 * Queue : nodes to be processed
 * Set : visited set
 
