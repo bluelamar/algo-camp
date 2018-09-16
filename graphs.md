@@ -173,20 +173,20 @@ While **Stack** not empty
 
 #### Recursive algorithm
 
-Given a DAG, build adjacency list for each node.
+Given a **Queue** of nodes.
 
-Nodes that have no incoming edges are added to a **Queue**
+Given a DAG, build adjacency list for each node.
 
 Sorted nodes will be kept in a **Stack**
 
 Loop thru **Queue**
 * remove **node** from **Queue**
 * Process **node**
- * if **node** not in **Visited Set**
-  * add **node** to **Visited Set**
-  * Loop through **adjacency list**
-    * recursive call to Process **adj-node**
-  * push **node** onto **Sort Stack**
+  * if **node** not in **Visited Set**
+    * add **node** to **Visited Set**
+    * Loop through **adjacency list**
+      * recursive call to Process **adj-node**
+    * push **node** onto **Sort Stack**
       
  When Process *node* returns, have a **Stack** with the sorted nodes
 
