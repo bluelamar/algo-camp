@@ -109,7 +109,7 @@ Loop through all nodes/vertices in the Graph
       * put **adj-node** into **PriorityQueue**: **PriorityQueue.put(adj-node, distance)**
       * update: **Distance.put(adj-node, weight(node, adj-node))**
       * update: **Previous.put(adj-node, node)**
-    * else if **Distance.get(adj-node)** > **distance**
+    * else if **Distance.get(adj-node)** > **weight(node, adj-node)**
       * update **PriorityQueue** with **adj-node** and **distance**
       * update: **Distance.put(adj-node, weight(node, adj-node))**
       * update: **Previous.put(adj-node, node)**
